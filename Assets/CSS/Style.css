@@ -134,6 +134,9 @@ img {
     transition: 0.5s;
   }
 }
+.nav_logo{
+    margin-left: 200px;
+}
 
 .nav_items {
   margin-bottom: var(--mb-4);
@@ -203,6 +206,8 @@ img {
 .home_social {
   display: flex;
   flex-direction: column;
+  /* gap: 20px; */
+  
 }
 .home_social_icon {
   width: max-content;
