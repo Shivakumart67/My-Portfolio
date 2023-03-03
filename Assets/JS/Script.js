@@ -1,15 +1,21 @@
-// Show Menu Hamburger Menu Designing.
+// Show Menu Hamburger Menu Designing for Mobile View.
 
 const toggle = document.getElementById("nav_toggle");
 const nav = document.getElementById("nav_menu");
-var flag = true;
 toggle.addEventListener("click", () => {
-  //   console.log();
-  if (nav.hasAttribute("class", "show") && flag === false) {
-    nav.classList.remove("show");
-    flag = true;
-  } else {
-    nav.classList.add("show");
-    flag = false;
+  nav.classList.toggle("show");
+});
+
+// Adding the Active class to Navigation Items
+const navlist = document.querySelectorAll(".nav_link");
+var check;
+nav.addEventListener("click", (e) => {
+  console.log(e.target);
+  const target = e.target;
+  if (check != undefined) {
+    check.classList.remove("active");
   }
+  target.classList.add("active");
+  check = target;
+  nav.classList.remove("show");
 });
