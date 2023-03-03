@@ -8,13 +8,15 @@ toggle.addEventListener("click", () => {
 
 // Adding the Active class to Navigation Items
 const navlist = document.querySelectorAll(".nav_link");
-var check;
+const cond = document.querySelector("li:first-child a");
+
+var check = cond;
 nav.addEventListener("click", (e) => {
-  console.log(e.target);
   const target = e.target;
   if (check != undefined) {
     check.classList.remove("active");
   }
+  cond.classList.remove("active");
   target.classList.add("active");
   check = target;
   nav.classList.remove("show");
