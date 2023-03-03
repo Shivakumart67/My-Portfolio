@@ -13,7 +13,7 @@
 :root {
   --first-color: #4070f4;
   --second-color: #0e2431;
-  --gradient-color: linear-gradient(to right, #5001fb, #8e0af3);
+  --gradient-color: linear-gradient(to right, #5001fb,rgb(201, 74, 194));
 }
 
 /* Font Style */
@@ -110,7 +110,7 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0, 15);
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.2);
 }
 
 /* Navigation Bar */
@@ -159,6 +159,7 @@ img {
 
 .nav_logo {
   color: var(--second-color);
+  color:#fff !important;
 }
 .nav_toggle {
   color: var(--second-color);
@@ -167,7 +168,7 @@ img {
 }
 
 /* Active Menu */
-.active::after {
+ li .active::after{
   position: absolute;
   content: "";
   width: 100%;
@@ -528,4 +529,10 @@ img {
   .home_image{
       right: 10%;
   }
+}
+
+.css-1j8o68f{
+  margin-left: -60px;
+  margin-top: 50px;
+  height: 50px;
 }

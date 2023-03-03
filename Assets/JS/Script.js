@@ -9,6 +9,7 @@ toggle.addEventListener("click", () => {
 // Adding the Active class to Navigation Items
 const navlist = document.querySelectorAll(".nav_link");
 const cond = document.querySelector("li:first-child a");
+const eve  = document.querySelector(".nav_menu li");
 
 var check = cond;
 nav.addEventListener("click", (e) => {
