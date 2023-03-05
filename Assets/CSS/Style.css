@@ -210,13 +210,17 @@ img {
   
 }
 .home_social_icon {
+  margin-left: 1rem;
   width: max-content;
   margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--second-color);
+  transition-property: transform;
+  transition-duration:  0.5s;
 }
 
 .home_social_icon:hover {
+  transform: scale(1.5);
   color: var(--first-color);
 }
 
@@ -279,7 +283,9 @@ img {
   text-align: center;
 }
 
-
+.about_text{
+  text-indent: 40px;
+}
 .about_subtitle{
   margin-bottom: var(--mb-2);
 }
@@ -540,4 +546,45 @@ img {
   margin-left: -200px;
   margin-top: 50px;
   height: 50px;
+}
+
+
+@keyframes headname{
+  0%{
+    color: red;
+  }
+  25%{
+    color: #5001fb;
+  }
+  50%{
+    color: brown;
+  }
+  75%{
+    color: rgb(42, 165, 48);
+  }
+  100%{
+    color: rgb(42, 165, 149);
+  }
+  75%{
+    color: red;
+  }
+  50%{
+    color: #5001fb;
+  }
+  25%{
+    color: brown;
+  }
+  0%{
+    color: rgb(42, 165, 48);
+  }
+ 
+
+}
+.home_title_color:hover{
+  transition: all 0.5s;
+  animation-name: headname;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
 }
