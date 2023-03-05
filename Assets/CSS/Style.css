@@ -197,6 +197,7 @@ img {
 }
 
 .home_title {
+  /* font-size: 20px; */
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
 }
@@ -587,4 +588,14 @@ img {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 
+}
+
+#multitext{
+  /* display: inline-block; */
+  text-transform: capitalize;
+  font-weight: 10000;
+  color: blueviolet;
+  font-size: calc(var(--big-font-size) + 0.5rem);
+  
+  
 }

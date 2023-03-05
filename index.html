@@ -115,7 +115,7 @@
         <h1 class="home_title">
           Hi, <br />
           I'm <span class="home_title_color">Shivakumara T</span> <br />
-          Software Developer And <br> Web Developer
+          <span id="multitext"></span>
         </h1>
         <a href="#contactme" class="button">Contact Me</a>
       </div>
@@ -466,7 +466,9 @@
         </div>
         <div>
           <h2 class="about_subtitle">I'm Shivakumara T</h2>
-          <p class="about_text">I graduated with a Bachelors and a Masters in  Computer Science from Cornell University after finishing high school in Calcutta, India, prior to which I spent 7 years during elementary school in Bay Area, California.</p>
+          <p class="about_text">I graduated with a Bachelors and a Masters in Computer Science from Cornell University
+            after finishing high school in Calcutta, India, prior to which I spent 7 years during elementary school in
+            Bay Area, California.</p>
         </div>
       </div>
     </section>
@@ -941,14 +943,19 @@
 
   <!-- Linking JavaScript File -->
   <script src="./Assets/JS/Script.js"></script>
-  <!-- AOS Initiallize -->
-  <!-- <script>
-    AOS.init({
-      duration: 1200,
-      once: false,
-
+  <!-- To Make Text Scroll -->
+  <!-- Attaching CDN For Text Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- Script For Text Scroll -->
+  <script>
+    var typingeffect = new Typed("#multitext" , {
+      strings: ["Software Developer", "Web Developer"],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 60,
+      backDelay: 1000
     });
-  </script> -->
+  </script>
 </body>
 
 </html>
