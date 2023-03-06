@@ -253,7 +253,7 @@ li .active::after {
   border-radius: 0.5rem;
   background: var(--gradient-color);
   box-shadow: 1px 2px 8px black;
-  transition-property: box-shadow background transform; 
+  transition-property: box-shadow background transform;
   transition-duration: 0.3s;
 }
 
@@ -377,9 +377,11 @@ li .active::after {
 .skill_java {
   width: 70%;
 }
-.skill_mysql{
+
+.skill_mysql {
   width: 60%;
 }
+
 .skills_image {
   margin-left: 10px;
   margin-right: 10px;
@@ -534,29 +536,34 @@ li .active::after {
     width: 100%;
   }
 
-  .about_container{
+  .about_container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: initial;
 
   }
-  
-  .skills_container{
+
+  .skills_container {
     margin-top: -2rem;
   }
-  .skills_data{
+
+  .skills_data {
     width: 50%;
   }
-  .about_subtitle{
+
+  .about_subtitle {
     margin-top: -6rem;
   }
-.skills_image{
-  margin-top: -35%;
-  margin-left: 65%;
-}
-.skills_image svg{
-  transform: scale(1.5);
-}
+
+  .skills_image {
+    margin-top: -35%;
+    margin-left: 65%;
+  }
+
+  .skills_image svg {
+    transform: scale(1.5);
+  }
+
   .about_img svg {
     width: 450px;
 
@@ -568,7 +575,8 @@ li .active::after {
     column-gap: 2rem;
 
   }
-  .form_compose_btn{
+
+  .form_compose_btn {
     margin-top: -41px;
     margin-left: -200px;
   }
@@ -592,7 +600,7 @@ li .active::after {
     right: 10%;
   }
 }
-
+ /* For Making Header Typing Animation */
 .css-1j8o68f {
   margin-left: -200px;
   margin-top: 50px;
@@ -639,7 +647,7 @@ li .active::after {
 
 
 }
-
+/* Home name Animation */
 .home_title_color:hover {
   transition: all 0.5s;
   animation-name: headname;
@@ -648,7 +656,7 @@ li .active::after {
   animation-iteration-count: infinite;
 
 }
-
+/* Multi Text Design */
 #multitext {
   /* display: inline-block; */
   text-transform: capitalize;
@@ -656,12 +664,65 @@ li .active::after {
   color: blueviolet;
   font-size: calc(var(--big-font-size) + 0.5rem);
 }
-.form_compose_btn{
+
+/*Temporary Button */
+.form_compose_btn {
   width: fit-content;
   margin-top: -41px;
   transform: scale(0.9);
-   
+
 }
-.form_compose_btn:hover{
-  transform: scale(0.9) !important;
+
+.form_compose_btn:hover {
+  transform: scale(0.95) !important;
+}
+
+/* Marque Tage For Alert Note */
+
+.alert_note{
+  margin-top: -200px;
+  width: 50%;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.alert_note q {
+  animation-name: glitch;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes glitch {
+  0% {
+    color: red;
+  }
+
+  40% {
+    color: rgb(157, 255, 0);
+  }
+
+  80% {
+    color: rgb(0, 255, 128);
+  }
+
+  100% {
+    color: rgb(0, 195, 255);
+  }
+
+  80% {
+    color: rgb(0, 217, 255);
+  }
+
+  40% {
+    color: rgb(140, 0, 255);
+  }
+
+  20% {
+    color: rgb(255, 0, 221);
+  }
+
+  0% {
+    color: rgb(255, 0, 170);
+  }
 }
