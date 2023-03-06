@@ -11,7 +11,8 @@
   <!-- Title -->
   <title>Shivakumara</title>
   <!-- Favicon -->
-  <link rel="shortcut icon" href="./Assets/Img/favicon/android-chrome-512x512.png" type="image/x-icon">
+
+  <link rel="shortcut icon" href="./Assets/Img/favicon-32x32-removebg-preview.png" type="image/x-icon">
 
   <!-- CSS Link -->
   <link rel="stylesheet" href="./Assets/CSS/Style.css" />
@@ -117,7 +118,14 @@
           I'm <span class="home_title_color">Shivakumara T</span> <br />
           <span id="multitext"></span>
         </h1>
-        <a href="#contactme" class="button">Contact Me</a>
+        <button style = "border: none; font-size: 16px; cursor: pointer; margin-right: 2%;" onclick="composeMail()"class = "button" >
+          Hire Me
+        </button>
+        <button style = "border: none; font-size: 16px; cursor: pointer;"  class = "button" target = "_blank">
+          Download CV
+        </button>
+        <!-- <a style = "margin-right: 2%;" href="mailto:shivakumart67@gmail.com" onclick="composeMail()" class="button" target="_blank">Hire Me</a>
+        <a href="#contactme" class="button"></a> -->
       </div>
       <div class="home_social">
         <a href="#" class="home_social_icon"><i class="bx bxl-facebook-circle"></i></a>
@@ -466,9 +474,7 @@
         </div>
         <div>
           <h2 class="about_subtitle">I'm Shivakumara T</h2>
-          <p class="about_text">I graduated with a Bachelors and a Masters in Computer Science from Cornell University
-            after finishing high school in Calcutta, India, prior to which I spent 7 years during elementary school in
-            Bay Area, California.</p>
+          <p class="about_text"> I completed my graduation in Mechanical Engineering at UBDT College of Engineering at the year of 2022 in Karnataka, India and I’m currently pursuing a full-stack development Course in Open source and Online Platform. I have a strong foundation in programming languages such as Java, JavaScript, HTML, and CSS, and have a good knowledge of related frameworks, and also skilled in My SQL For RDBMS and these skills enables to build efficient and robust applications and Responsive Websites.</p>
         </div>
       </div>
     </section>
@@ -492,7 +498,7 @@
             <span class="skill_name">HTML 5</span>
           </div>
           <div>
-            <span class="skill_percentage">95%</span>
+            <span class="skill_percentage">80%</span>
           </div>
           <div class="skill_bar skill_html"></div>
         </div>
@@ -504,7 +510,7 @@
             <span class="skill_name">CSS 3</span>
           </div>
           <div>
-            <span class="skill_percentage">80%</span>
+            <span class="skill_percentage">70%</span>
           </div>
           <div class="skill_bar skill_css"></div>
         </div>
@@ -517,7 +523,7 @@
             <span class="skill_name">JavaScript</span>
           </div>
           <div>
-            <span class="skill_percentage">70%</span>
+            <span class="skill_percentage">60%</span>
           </div>
           <div class="skill_bar skill_js"></div>
         </div>
@@ -530,12 +536,24 @@
             <span class="skill_name">Java</span>
           </div>
           <div>
-            <span class="skill_percentage">90%</span>
+            <span class="skill_percentage">70%</span>
           </div>
           <div class="skill_bar skill_java"></div>
         </div>
-        <div>
-          <svg class="skills_image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+
+        <!-- SKill My SQL -->
+        <div class="skills_data">
+          <div class="skills_name">
+            <i class='bx bxs-data skill_icon'></i>
+            <span class="skill_name">My SQL</span>
+          </div>
+          <div>
+            <span class="skill_percentage">60%</span>
+          </div>
+          <div class="skill_bar skill_mysql"></div>
+        </div>
+        <div class="skills_image">
+          <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             data-name="Layer 1" viewBox="0 0 1030.01 729.86">
             <defs>
               <linearGradient id="a5312bde-8c7e-4767-9e17-08a43f21bf92-630" x1="889.13" y1="701.85" x2="889.13"
@@ -918,7 +936,11 @@
           <input type="email" class="control_input" placeholder="Email">
           <textarea name="" id="" cols="0" rows="10" class="control_input"></textarea>
           <input type="button" class=" control_button button" placeholder="Send" value="Send">
+     
         </form>
+        <button style = "border: none; font-size: 16px; cursor: pointer; margin-right: 2%;" onclick="composeMail()"class = "button form_compose_btn" >
+          Compose Mail
+        </button>
       </div>
 
     </section>

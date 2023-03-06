@@ -22,3 +22,8 @@ nav.addEventListener("click", (e) => {
   check = target;
   nav.classList.remove("show");
 });
+
+// To Compose a mail while click the Hire Me Button
+function composeMail() {
+  window.open("https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=shivakumart67@gmail.com&su=&body=");
+}
