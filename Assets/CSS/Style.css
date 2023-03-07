@@ -409,6 +409,7 @@ li .active::after {
 }
 
 .work_image img:hover {
+  opacity: 0.5;
   transform: scale(1.1);
 }
 
@@ -600,7 +601,8 @@ li .active::after {
     right: 10%;
   }
 }
- /* For Making Header Typing Animation */
+
+/* For Making Header Typing Animation */
 .css-1j8o68f {
   margin-left: -200px;
   margin-top: 50px;
@@ -647,6 +649,7 @@ li .active::after {
 
 
 }
+
 /* Home name Animation */
 .home_title_color:hover {
   transition: all 0.5s;
@@ -656,6 +659,7 @@ li .active::after {
   animation-iteration-count: infinite;
 
 }
+
 /* Multi Text Design */
 #multitext {
   /* display: inline-block; */
@@ -679,7 +683,7 @@ li .active::after {
 
 /* Marque Tage For Alert Note */
 
-.alert_note{
+.alert_note {
   margin-top: -200px;
   width: 50%;
   margin-left: 50%;
@@ -725,4 +729,55 @@ li .active::after {
   0% {
     color: rgb(255, 0, 170);
   }
+}
+
+.footer_icon:hover {
+  color: var(--first-color);
+}
+
+/* School Result Management System Styles */
+
+.SRMS_header {
+  padding: 1.5rem 3rem;
+  display: flex;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.2);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.SRMS_heading {
+  text-transform: uppercase;
+  color: rgb(11, 11, 185);
+  font-size: 180%;
+}
+
+.SRMS_btn {
+  cursor: pointer;
+}
+
+.SRMS_btn a {
+  color: #fff;
+}
+
+.grid_container {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  column-gap: 20px;
+  row-gap: 50px;
+  justify-items: center;
+}
+
+section ul {
+  margin-top: 50px;
+  margin-left: 50px;
+  list-style: square;
+
+}
+
+section ul li {
+  margin-top: 20px;
 }
