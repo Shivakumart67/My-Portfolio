@@ -219,7 +219,6 @@ li .active::after {
 }
 
 .home_social_icon {
-  margin-left: 1rem;
   width: max-content;
   margin-bottom: var(--mb-2);
   font-size: 2rem;
@@ -398,6 +397,7 @@ li .active::after {
 }
 
 .work_image {
+  position: relative;
   box-shadow: 0 4px 25px rgba(14, 36, 0, 15);
   border-radius: 0.5rem;
   overflow: hidden;
@@ -406,11 +406,31 @@ li .active::after {
 .work_image img {
   transition: 1s;
   cursor: pointer;
+
+}
+
+.SRMS_link h2 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  color: rgb(0, 0, 0);
+  padding-top: 20px;
+  background-color: rgba(248, 242, 246, 0.5);
 }
 
 .work_image img:hover {
-  opacity: 0.5;
+  opacity: 0.3;
   transform: scale(1.1);
+}
+
+.work_icons {
+  padding-top: 1rem;
+  font-size: 180%;
+
 }
 
 /* Contact Input */
@@ -518,14 +538,14 @@ li .active::after {
     padding-bottom: 2.5rem;
     flex-direction: row;
     align-self: flex-end;
-    margin-top: -5rem;
+    margin-top: -8rem;
     margin-left: 2%;
 
   }
 
   .home_social_icon {
-    margin-bottom: 0;
-    margin-right: var(--mb-4);
+    margin-bottom: 1%;
+    margin-right: calc(var(--mb-4) + 2%);
   }
 
   .home_image {
@@ -554,6 +574,10 @@ li .active::after {
 
   .about_subtitle {
     margin-top: -6rem;
+  }
+
+  .about_text {
+    text-align: justify;
   }
 
   .skills_image {
@@ -738,17 +762,22 @@ li .active::after {
 /* School Result Management System Styles */
 
 .SRMS_header {
-  padding: 1.5rem 3rem;
+  background-color: #fff;
+  padding: 1rem 3rem;
   display: flex;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.2);
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 
 .SRMS_heading {
   text-transform: uppercase;
   color: rgb(11, 11, 185);
   font-size: 180%;
+
 }
 
 .SRMS_btn {
@@ -780,4 +809,74 @@ section ul {
 
 section ul li {
   margin-top: 20px;
+}
+
+/* Resume Section */
+.cv_quote {
+  text-align: center;
+  padding: 15px 100px;
+}
+
+.cv_heading {
+  margin-left: 1px;
+display: inline-block;
+padding: 0.8rem 1rem;
+border-left: 8px solid #052e9e;
+  background-color: #1552fc2f;
+  color: #182a5c;
+  margin-top: 2%;
+  /* margin-left: 2%; */
+}
+
+.cv_container {
+  background-color: #0e2431;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  border: 1px solid black;
+  height: a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: end;
+
+
+}
+
+.cv_lists {
+  box-shadow: 10px 12px 10px rgb(0, 0, 0);
+  position: relative;
+  height: 500px;
+  width: auto;
+  margin-right: 20px;
+  height: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.cv_lists img{
+  cursor: pointer;
+  height: 500px;
+  transition: transform 0.5s;
+}
+.cv_lists img:hover{
+  
+  transform: scale(1.05);
+}
+
+.cv_label {
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+  padding-top: 16px;
+  /* overflow: auto; */
+  font-size: 12px;
+  position: absolute;
+  bottom: 0 ;
+  width: 100%;
+  /* left: 50%; */
+  /* transform: translate(-50%); */
+  height: 10%;
+  /* border-radius: 50px; */
+  background-color: rgb(4, 5, 15, 0.9);
+
 }
