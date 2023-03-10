@@ -880,3 +880,24 @@ border-left: 8px solid #052e9e;
   background-color: rgb(4, 5, 15, 0.9);
 
 }
+
+@media screen and (max-width: 768px) {
+  .SRMS_header{
+      margin-top: -100px;
+      /* margin-bottom: 200px; */
+      flex-direction: column;
+  }
+  .cv_quote{
+    margin-top: 60px;
+  }
+  .SRMS_btn{
+    margin-top: 0.2rem;
+      transform: scale(0.6);
+  }
+  .SRMS_btn:hover{
+    transform: scale(0.7);
+  }
+  .cv_container{
+    flex-direction: row;
+  }
+}
